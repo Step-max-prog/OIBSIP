@@ -223,7 +223,6 @@ a {
 }
 
 
-/* Card Content */
 
 .card-content {
     padding: 25px;
@@ -471,9 +470,6 @@ a {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 520px) {
 
