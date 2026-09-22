@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f1ea;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2f2a26;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+#taskInput:focus {
+    border-color: #8b6f47;
+}
+
+button {
+    padding: 13px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #2f2a26;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #8b6f47;
+}
+
+#taskList {
+    list-style: none;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: #f8f5ef;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #8b6f47;
+}
+
+.task-text {
+    flex: 1;
+    word-break: break-word;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.complete-btn,
+.delete-btn {
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+.complete-btn {
+    background: #5c7651;
+}
+
+.delete-btn {
+    background: #a64b4b;
+}
+
+.complete-btn:hover {
+    background: #45603b;
+}
+
+.delete-btn:hover {
+    background: #873838;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+        padding: 25px 18px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    #taskInput,
+    .input-area button {
+        width: 100%;
+    }
+
+    #taskList li {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .task-buttons {
+        width: 100%;
+    }
+
+    .complete-btn,
+    .delete-btn {
+        flex: 1;
+    }
+}
